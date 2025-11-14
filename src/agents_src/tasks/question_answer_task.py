@@ -24,7 +24,7 @@ qa_task = Task(
     - Synthesize a clear, accurate answer grounded in the retrieved sources or chat history
     - If the query cannot be answered from the knowledge source or chat history, do not generate your own response.
       Instead, state clearly that the knowledge source does not contain the required information.
-    - Provide transparency by including references, tool usage, and reasoning steps
+    - Provide transparency by including references, tool usage, and reasoning Installation_steps
     """,
     expected_output="""
     A structured JSON object with the following fields:

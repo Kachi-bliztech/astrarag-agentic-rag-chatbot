@@ -1,0 +1,29 @@
+
+
+creat a github repository
+Install the dependencies - requirement.txt
+create .env and add configurable paths
+create the docs_dir folder - for the documents
+create the src folder (This contains all the source code)
+create  folders inside the src (agents, backend, frontend, rag_doc_ingestion)
+create __init__.py file inside the folders
+In the gitignore folder, uncomment .idea
+Add the vector db to the git ignore
+
+Next
+Document Ingestion
+1. RAG document ingestion
+- Create a config folder inside the rag-doc-ingestion
+- Create a new file inside the 'config' folder - doc_ingestion_settings
+- add the documents ingestion settings on the file
+- Add another file 'ingest_doc' inside the 'rag_doc_ingestion' directory
+- ingest_doc = will have the code to build your vector database
+- Run this script --- python -m src.rag_doc_ingestion.ingest_docs
+
+push to github
+git add .
+git status
+
+
+Next
+Create the Agent
