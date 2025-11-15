@@ -51,8 +51,17 @@ Next
 - Create the 'start.sh' file and add the configurations
 ** Note: DO not add your API key while building the Docker image
 
-Next
+Next - Deploy on Docker
 - Ensure docker is running on your system
 - Deploy Docker using the steps on 'deploy_on_docker_steps'
 - Create a Docker container
 
+Next - Deploy on AWS EC2
+- Create EC2 instance
+- Push the Github repository to EC2 instance
+use below steps
+git clone https://github.com/Kachi-bliztech/astrarag-agentic-rag-chatbot.git
+
+- Deploy on Docker container
+Build the image on EC2
+-docker build -t astrarag-chatbot:latest .
