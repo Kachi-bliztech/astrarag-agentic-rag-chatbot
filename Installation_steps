@@ -23,7 +23,36 @@ Document Ingestion
 push to github
 git add .
 git status
-
+git commit -m "description"
+git push origin main
 
 Next
-Create the Agent
+Create the Agent ie build the RAG Agent
+Creat a RAG query tool that will connect to vector database and give answers to the relevant
+response for the user query
+A crewai agent will be using this tool
+- create the 'agents_src' folder and add "agents,config,llm,task,tools" folders inside
+- In the 'agents' folder create the agent setting "question_answer_agent"
+- In the 'tool' folder creat the 'rag_qa_tool' file : The tool will be used by the agent
+- Create 'llm' folder inside the src directory. Create 'get_llm' and 'llm_configuration' inside the folder
+- llm_configuration is used to configure llm. You can add additional llm and adjust/update. Different agentscan use different models
+- create the 'tasks' folder inside the src. Add 'question_answer_task' file inside the task folders
+- create the 'crew.py' and 'check_crew.py' file inside tools
+- check_crew.py is used to test if the crew is working or not
+
+Next
+Create the backend and frontend folders and codes
+-run this script -- python -m src.backend_src.main
+- --This will start the api
+- check the api using -- http://localhost:8000/docs
+
+Next
+- Create a Docker file - add the configurations
+- Create the 'start.sh' file and add the configurations
+** Note: DO not add your API key while building the Docker image
+
+Next
+- Ensure docker is running on your system
+- Deploy Docker using the steps on 'deploy_on_docker_steps'
+- Create a Docker container
+

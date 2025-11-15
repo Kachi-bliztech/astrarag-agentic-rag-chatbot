@@ -71,7 +71,7 @@ def rag_query_tool(query: str) -> dict:
 # For direct testing, uncomment the code below and comment out @tool.
 # When using CrewAI, uncomment @tool and comment out the test code.
 
-# output = rag_query_tool(query="Explain Ecosystem and Evolution.")
-# print(output)
-# print(output["answer"])
-# print(output["source_files"])
+#output = rag_query_tool(query="Explain Ecosystem and Evolution.")
+#print(output)
+#print(output["answer"])
+#print(output["source_files"])

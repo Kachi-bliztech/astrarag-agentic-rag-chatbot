@@ -208,3 +208,24 @@ __marimo__/
 
 #Vector db dir
 doc_vector_store/
+doc_vector_store
+
+
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.idea/
+.vscode/
+*.egg-info/
+.DS_Store
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.sqlite3
